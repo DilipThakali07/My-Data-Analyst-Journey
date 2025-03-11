@@ -1,6 +1,6 @@
-# My-Data-Analyst-Journey
-## Goals
--[x] Learn SQL for Data Cleaning and Manipulation
--[] Complete NHS Healthcare Cost analysis Project
--[] Complete Sales analysis Project
--[] Complete stock Price analysis Project
+# My-Data-Analyst-Journey <br>
+## Goals <br>
+-[x] Learn SQL for Data Cleaning and Manipulation <br>
+-[ ] Complete NHS Healthcare Cost analysis Project <br>
+-[ ] Complete Sales analysis Project <br>
+-[ ] Complete stock Price analysis Project <br>
