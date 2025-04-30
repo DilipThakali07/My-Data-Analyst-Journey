@@ -99,7 +99,7 @@ Focus: WINDOW FUNCTIONS, CTEs, LAG(), LEAD(), JOIN, subqueries <br>
 → Use a calendar table and LEFT JOIN.<br>
 20.	If you invested $1000 at the beginning of each month, how much would it be worth now?<br>
 
-The answers of the above questions are 
+The answers of the above questions are [found here](https://github.com/DilipThakali07/My-Data-Analyst-Journey/blob/main/SQL/PROJECTS/Stock%20Analysis/stock_analysis.sql)
 ### What I Learned
 SQL is a powerful tool for analyzing large datasets and identifying patterns.
 - Data cleaning is just as important as analysis — it’s a key part of the process.
