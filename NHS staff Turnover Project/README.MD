@@ -83,7 +83,7 @@ SELECT
     END AS turnover_band
 FROM turnover_summary;
 
-🔍 Key Business Questions Answered
+### 🔍 Key Business Questions Answered
 Q1. What is the average staff turnover across NHS Trusts?
 
 Calculated average leaver rate per trust
