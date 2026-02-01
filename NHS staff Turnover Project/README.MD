@@ -81,9 +81,9 @@ SELECT
         WHEN avg_leaver_rate < 0.15 THEN 'Medium Turnover'
         ELSE 'High Turnover'
     END AS turnover_band
-FROM turnover_summary;
+FROM turnover_summary;```
 
-### 🔍 Key Business Questions Answered
+🔍 Key Business Questions Answered
 Q1. What is the average staff turnover across NHS Trusts?
 
 Calculated average leaver rate per trust
@@ -163,3 +163,4 @@ Some low-turnover trusts still rely heavily on agency staffing
 Financial risk is driven by cost structure, not turnover alone
 
 A small number of trusts represent disproportionate financial risk
+
