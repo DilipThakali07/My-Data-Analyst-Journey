@@ -83,3 +83,56 @@ SELECT
     END AS turnover_band
 FROM turnover_summary;```
 
+## 🔍 Key Business Questions Answered
+
+### Q1. What is the average staff turnover across NHS Trusts?
+- Calculated the average leaver rate per trust
+- Classified trusts into **Low**, **Medium**, and **High** turnover bands
+
+### Q2. Do high-turnover trusts rely more on agency staff or overtime?
+- Compared agency and overtime cost percentages by turnover band
+- Found that **agency staff costs dominate across all bands**, not just in high-turnover trusts
+
+### Q3. Which trusts are financial outliers?
+- Identified trusts with:
+  - High turnover
+  - High temporary staffing cost percentages
+- Classified organisations as:
+  - **Within Expected Range**
+  - **Moderate Outlier**
+  - **Severe Outlier**
+
+### Q4. Which staff groups drive financial pressure?
+- Combined turnover and finance data by staff group via trust-level joins
+- Highlighted the workforce segments contributing most to agency and overtime reliance
+
+### Q5. Does turnover impact overall financial sustainability?
+- Built a **Sustainability Risk Framework** using:
+  - Turnover rate
+  - Agency % of pay
+  - Overtime % of pay
+- Identified trusts at higher operational and financial risk
+
+## 📈 Power BI Dashboard
+The Power BI report presents insights through:
+
+**KPI Cards:**
+- Average Turnover Rate
+- Average Agency Cost %
+- Average Overtime Cost %
+
+**Key Visuals:**
+- Top 10 organisations by turnover
+- Agency vs. overtime contribution by turnover band
+- Turnover risk classification (donut chart)
+- Outlier scatter plot: Turnover vs. Temporary Staff Cost
+
+📸 *Dashboard preview included in repository*
+
+## 🧠 Key Insights
+- High turnover does **not** always correlate with the highest agency spend
+- Some low-turnover trusts still rely heavily on agency staffing
+- Financial risk is driven by **cost structure**, not turnover alone
+- A small number of trusts represent disproportionate financial risk
+
+
