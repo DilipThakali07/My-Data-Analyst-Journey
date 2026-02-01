@@ -59,30 +59,6 @@ Key fields:
   - Agency % of total pay
   - Overtime % of total pay
   - Temporary staff cost %
-
-### Example View:
-```sql
-CREATE VIEW vw_TrustTurnoverSummary AS
-WITH turnover_summary AS (
-    SELECT
-        trust_code,
-        MAX(organisation_name) AS organisation_name,
-        AVG(leaver_rate) AS avg_leaver_rate
-    FROM clean.staff_turnover_clean
-    WHERE leaver_rate BETWEEN 0 AND 0.3
-    GROUP BY trust_code
-)
-SELECT
-    trust_code,
-    organisation_name,
-    ROUND(avg_leaver_rate, 3) AS avg_leaver_rate,
-    CASE
-        WHEN avg_leaver_rate < 0.08 THEN 'Low Turnover'
-        WHEN avg_leaver_rate < 0.15 THEN 'Medium Turnover'
-        ELSE 'High Turnover'
-    END AS turnover_band
-FROM turnover_summary;```
-
 ## 🔍 Key Business Questions Answered
 
 ### Q1. What is the average staff turnover across NHS Trusts?
@@ -134,5 +110,29 @@ The Power BI report presents insights through:
 - Some low-turnover trusts still rely heavily on agency staffing
 - Financial risk is driven by **cost structure**, not turnover alone
 - A small number of trusts represent disproportionate financial risk
+
+### Example View:
+```sql
+CREATE VIEW vw_TrustTurnoverSummary AS
+WITH turnover_summary AS (
+    SELECT
+        trust_code,
+        MAX(organisation_name) AS organisation_name,
+        AVG(leaver_rate) AS avg_leaver_rate
+    FROM clean.staff_turnover_clean
+    WHERE leaver_rate BETWEEN 0 AND 0.3
+    GROUP BY trust_code
+)
+SELECT
+    trust_code,
+    organisation_name,
+    ROUND(avg_leaver_rate, 3) AS avg_leaver_rate,
+    CASE
+        WHEN avg_leaver_rate < 0.08 THEN 'Low Turnover'
+        WHEN avg_leaver_rate < 0.15 THEN 'Medium Turnover'
+        ELSE 'High Turnover'
+    END AS turnover_band
+FROM turnover_summary;```
+
 
 
