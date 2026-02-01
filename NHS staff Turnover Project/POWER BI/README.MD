@@ -10,7 +10,7 @@ The dashboard is designed to translate SQL-based analysis into **clear, interact
 
 Below is a preview of the Power BI dashboard highlighting staff turnover, temporary staffing costs, and financial risk across NHS Trusts.
 
-![Power BI Dashboard Preview](nhs dashboard.JPG)
+![Dashboard Preview](nhs dashboard.JPG)
 
 
 
