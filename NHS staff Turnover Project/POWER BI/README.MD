@@ -6,7 +6,12 @@ This folder contains the **Power BI dashboard** developed for the project
 
 The dashboard is designed to translate SQL-based analysis into **clear, interactive visuals** that support workforce planning and financial decision-making.
 
-dashboard_overview.png
+## 🖼️ Dashboard Preview
+
+Below is a preview of the Power BI dashboard highlighting staff turnover, temporary staffing costs, and financial risk across NHS Trusts.
+
+![Power BI Dashboard Preview](dashboard_overview.png)
+
 
 
 ---
